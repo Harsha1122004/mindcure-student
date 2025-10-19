@@ -1,0 +1,40 @@
+.analytics-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.analytics-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #3a7bd5, #00e5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: #a0aec0;
+  margin-bottom: 2.5rem;
+}
+
+.chart-block {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+}
+
+.chart-block h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  color: #00e5ff;
+}
+
+.recharts-tooltip-wrapper {
+  background: #1a1f2b !important;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 0.5rem;
+}

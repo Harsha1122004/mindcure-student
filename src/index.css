@@ -1,0 +1,156 @@
+/* -------------------------------
+🌿 Minimalist Global Styling
+------------------------------- */
+
+:root {
+  --bg-color: #f4f5f7;
+  --card-bg: #ffffff;
+  --text-color: #222;
+  --primary: #4a90e2;
+  --secondary: #6b7280;
+  --border-color: #e5e7eb;
+  --radius: 14px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* 🌟 Main Container Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* 📦 Card UI */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* 🧭 Navbar */
+.navbar {
+  background: var(--card-bg);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* 💬 Chat Container */
+.chat-box {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.message {
+  margin-bottom: 1rem;
+}
+
+.message.user {
+  text-align: right;
+  color: var(--primary);
+}
+
+.message.bot {
+  text-align: left;
+  color: var(--text-color);
+}
+
+/* ✉️ Input Field */
+.input-area {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.2s ease;
+}
+
+.input-area input:focus {
+  border-color: var(--primary);
+}
+
+.input-area button {
+  padding: 0.9rem 1.8rem;
+  margin-left: 0.7rem;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.input-area button:hover {
+  background: #3a7bd5;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .navbar h1 {
+    font-size: 1.3rem;
+  }
+
+  .input-area button {
+    padding: 0.8rem 1.2rem;
+  }
+}

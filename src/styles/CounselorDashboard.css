@@ -1,0 +1,46 @@
+.counselor-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  color: #fff;
+}
+
+.alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.alert-card {
+  padding: 1.5rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.alert-card.new {
+  border-left: 6px solid #ff5252;
+  background: rgba(255, 0, 0, 0.08);
+}
+
+.alert-card.ack {
+  border-left: 6px solid #00e676;
+  background: rgba(0, 255, 0, 0.08);
+}
+
+button {
+  margin-top: 1rem;
+  background: #3a7bd5;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #2c5aa0;
+}

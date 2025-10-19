@@ -1,0 +1,136 @@
+.chat-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(25px);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.chat-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #3a7bd5, #00e5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.messages-box {
+  min-height: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.message {
+  padding: 0.9rem 1.2rem;
+  border-radius: 16px;
+  font-size: 1rem;
+  max-width: 75%;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.message.user {
+  background: linear-gradient(135deg, #3a7bd5, #00e5ff);
+  color: #fff;
+  margin-left: auto;
+}
+
+.message.bot {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  margin-right: auto;
+}
+
+.typing {
+  font-style: italic;
+  color: #a0aec0;
+}
+
+.analysis-card,
+.resources-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.2rem;
+  border-radius: 16px;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.analysis-card p {
+  margin-bottom: 0.5rem;
+}
+
+.crisis-alert {
+  color: #ff4b4b;
+  font-weight: bold;
+}
+
+.resources-card h3 {
+  margin-bottom: 0.8rem;
+  color: #00e5ff;
+}
+
+.resources-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resources-card li {
+  margin-bottom: 0.5rem;
+}
+
+.resources-card a {
+  color: #3a7bd5;
+  text-decoration: none;
+}
+
+.resources-card a:hover {
+  text-decoration: underline;
+}
+
+.input-bar {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.input-bar input {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.input-bar input::placeholder {
+  color: #a0aec0;
+}
+
+.send-btn {
+  padding: 0 1.5rem;
+  background: linear-gradient(135deg, #3a7bd5, #00e5ff);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: linear-gradient(135deg, #00e5ff, #3a7bd5);
+}
+
+.send-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
